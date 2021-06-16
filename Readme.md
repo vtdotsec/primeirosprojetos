@@ -1,3 +1,3 @@
-![](https://github.com/vtdotsec/primeirosprojetos/docs/python-logo.png)
+![python-logo](https://github.com/vtdotsec/primeirosprojetos/tree/main/docs/python-logo.png)
 <br>
 Primeiros projetos :)
