@@ -1,7 +1,4 @@
-<p align="center">
-  <img src="https://github.com/vtdotsec/primeirosprojetos/tree/main/docs/python-logo.png" width="350" title="hover text">
-</p>
-<br>
+![](https://github.com/vtdotsec/primeirosprojetos/blob/main/docs/python-logo.png)
 Primeiros projetos :)
 
 
