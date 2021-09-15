@@ -1,3 +1,5 @@
+# WIP
+# EM PROGRESSO...
 from random import randint
 from forex_python.converter import CurrencyRates
 import datetime
