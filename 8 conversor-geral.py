@@ -84,17 +84,13 @@ if op == 2:
                     '2. MINUTOS\n'
                     '3. HORAS\n'
                     '4. DIA\n'
-                    '5. SEMANA\n'
-                    '6. MÊS\n'
-                    '7. ANO\n'
+                    
                     'Escolha uma opção: '))
         optempo2 = int(input('\nDigite no que quer converter: \n'
                     '1. MINUTOS\n'
                     '2. HORAS\n'
                     '3. DIA\n'
-                    '4. SEMANA\n'
-                    '5. MÊS\n'
-                    '6. ANO\n'
+                    
                     'Escolha uma opção: '))
         # SEGUNDOS
         # Segundos para Minuto
@@ -115,24 +111,13 @@ if op == 2:
             d = segundos / 86400
             print(f'\n{segundos} segundos = {d:.2f} dias')
 
-        # Segundos para Semana
-        if optempo1 == 1 and optempo2 == 4:
-            segundos = float(input('Digite a quantia em SEGUNDOS: '))
-            sem = segundos / 604800
-            print(f'\n{segundos} segundos = {sem:.2f} semanas')
-
-        # Segundos para Mês
-        if optempo1 == 1 and optempo2 == 5:
-            segundos = float(input('Digite a quantia em SEGUNDOS: '))
-            m = segundos / 2592000
-
-        # Segundos para Ano
-        if optempo1 == 1 and optempo2 == 6:
-            segundos = float(input('Digite a quantia em SEGUNDOS: '))
-            a = segundos / 31536000
-            print(f'\n{segundos} segundos = {a:.2f} ano(s)')
-
         # Minutos
+        # Minutos para Segundos
+        if optempo1 ==  1 and optempo1 == 1:
+            minutos = float(input('Digite a quantia em MINUTOS: '))
+            min = minutos * 60
+            print(f'\n{minutos} minutos = {min:.2f} segundos')
+
         # Minutos para Hora
         if optempo1 == 2 and optempo2 == 2:
             minutos = float(input('Digite a quantia em MINUTOS: '))
@@ -182,23 +167,32 @@ if op == 2:
             dia = horas / 24
             print(f'\n{horas} horas = {dia:.2f} dia(s)')
 
-        # Horas para Semana
-        if optempo1 == 3 and optempo2 == 4:
-            horas = float(input('Digite a quantia em HORAS: '))
-            semana = horas / 168
-            print(f'\n{horas} dias = {semana:.2f} semana(s)')
+        # Dias
+        # Dias para Segundos
 
-        # Horas para Mês
-        if optempo1 == 3 and optempo2 == 5:
-            horas = float(input('Digite a quantia em HORAS: '))
-            mes = horas / 730
-            print(f'\n{horas} dias = {mes:.2f} mês(es)')
-
-        # Horas para Ano
         if optempo1 == 3 and optempo2 == 1:
-            dias = float(input('Digite a quantia em DIAS: '))
-            ano = dias / 8760
-            print(f'\n{dias} dias = {ano:.2f} ano(s)')
+            dia = float(input('Digite a quantia em DIAS: '))
+            segundos = dia * 86.400
+            print(f'\n{dia} dias = {segundos:.2f} segundos')
+
+        # Dias em Minutos
+        if optempo1 == 3 and optempo2 == 1:
+            dia = float(input('Digite a quantia em DIAS: '))
+            minutos = dia * 1440
+            print(f'\n{dia} dias = {minutos:.2f} minutos')
+
+        # Dias em Horas
+        if optempo1 == 3 and optempo2 == 1:
+            dia = float(input('Digite a quantia em DIAS: '))
+            horas = dia * 24
+            print(f'\n{dia} dias = {horas:.2f} horas')
+
+        # Dias em Dias (?)
+
+        if optempo1 == 3 and optempo2 == 1:
+            dia = float(input('Digite a quantia em DIAS: '))
+            dias = dia / 1
+            print(f'\n{dia} dias = {dias:.2f} dias')
 
 
 
