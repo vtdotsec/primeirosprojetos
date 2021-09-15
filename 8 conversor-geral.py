@@ -1,5 +1,3 @@
-# WIP
-# EM PROGRESSO...
 from random import randint
 from forex_python.converter import CurrencyRates
 import datetime
@@ -195,15 +193,6 @@ if op == 2:
             dia = float(input('Digite a quantia em DIAS: '))
             dias = dia / 1
             print(f'\n{dia} dias = {dias:.2f} dias')
-
-
-
-
-
-
-
-
-
 
 if op == 3:
     mes = datetime.datetime.today().month
